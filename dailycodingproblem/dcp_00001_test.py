@@ -18,27 +18,8 @@ import typing
 
 import pytest
 
-import dcp_00001 as dcp
+import dailycodingproblem.dcp_00001 as dcp
 
-
-TEST_CASES = [
-    {
-        'arguments': {'nums': [1, 2, 3, 4, 5]},
-        'answer': [120, 60, 40, 30, 24],
-    }, {
-        'arguments': {'nums': [1, 2, 3, 4, 5, 0]},
-        'answer': [0, 0, 0, 0, 0, 120],
-    }, {
-        'arguments': {'nums': [3, 2, 1]},
-        'answer': [2, 3, 6],
-    }, {
-        'arguments': {'nums': []},
-        'answer': [],
-    }, {
-        'arguments': {'nums': [2]},
-        'answer': [1],
-    },
-]
 
 
 def solve(nums: typing.List[int]) -> typing.List[int]:
@@ -52,8 +33,30 @@ def solve(nums: typing.List[int]) -> typing.List[int]:
 
 
 @pytest.mark.parametrize(
-    'function, case',
-    list(itertools.product([solve, dcp.solve], TEST_CASES)),
+    'case',
+    [
+        {
+            'arguments': {'nums': [1, 2, 3, 4, 5]},
+            'answer': [120, 60, 40, 30, 24],
+        }, {
+            'arguments': {'nums': [1, 2, 3, 4, 5, 0]},
+            'answer': [0, 0, 0, 0, 0, 120],
+        }, {
+            'arguments': {'nums': [3, 2, 1]},
+            'answer': [2, 3, 6],
+        }, {
+            'arguments': {'nums': []},
+            'answer': [],
+        }, {
+            'arguments': {'nums': [2]},
+            'answer': [1],
+        },
+    ],
 )
-def test_solution(function, case):
+def test_solution(develop, case):
+    if develop:
+        function = solve
+    else:
+        function = dcp.solve
+
     assert function(**case['arguments']) == case['answer']
