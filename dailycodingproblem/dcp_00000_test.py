@@ -1,5 +1,5 @@
 """
-TAGs: #dailycodingproblem
+TAGs: #dailycodingproblem, #easy
 URL: https://www.dailycodingproblem.com/
 
 Given a list of numbers and a number k, return whether any two numbers from the

@@ -1,5 +1,5 @@
 """
-TAGs: #dailycodingproblem
+TAGs: #dailycodingproblem, #medium
 URL: https://www.dailycodingproblem.com/
 
 cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and

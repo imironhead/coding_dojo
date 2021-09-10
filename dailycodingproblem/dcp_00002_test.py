@@ -1,5 +1,5 @@
 """
-TAGs: #dailycodingproblem
+TAGs: #dailycodingproblem, #medium
 URL: https://www.dailycodingproblem.com/
 
 Given the root to a binary tree, implement serialize(root), which serializes

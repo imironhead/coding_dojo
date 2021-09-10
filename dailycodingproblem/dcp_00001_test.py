@@ -1,5 +1,5 @@
 """
-TAGs: #dailycodingproblem
+TAGs: #dailycodingproblem, #hard
 URL: https://www.dailycodingproblem.com/
 
 Given an array of integers, return a new array such that each element at index

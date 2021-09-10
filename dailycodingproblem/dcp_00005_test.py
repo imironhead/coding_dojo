@@ -1,5 +1,5 @@
 """
-TAGs: #dailycodingproblem
+TAGs: #dailycodingproblem, #hard
 URL: https://www.dailycodingproblem.com/
 
 An XOR linked list is a more memory efficient doubly linked list. Instead of
